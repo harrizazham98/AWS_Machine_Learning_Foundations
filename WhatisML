@@ -1,0 +1,99 @@
+Machine Learning
+- enables computers to solve problems by using examples of real-world data.
+- allows computers to automatically learn and improve from experience without being explicitly programmed
+
+
+Different kinds of tasks or techniques under ML
+
+a) supervised learning
+      - dataset has a corresponding label or output value associated with it
+      
+b) unsupervised learning
+      - no labels for the training data and learning algorithm tries to learn the underlying patterns or distributions that govern the data.
+      
+c) reinforcement learning
+      - actions to take in a situation to maximize a reward (in the form of a number) on the way to reaching a specific goal. 
+      
+ - In machine learning, the problem solver abstracts away part of their solution as a flexible component called a model, and uses a special program 
+ called a model training algorithm to adjust that model to real-world data.
+ 
+ Components of ML:
+ -A machine learning model (model is a block of code or framework that can be modified to solve different but related problems based on the data provided.)
+ -A model training algorithm (an interactive process where the current model iteration is analyzed to determine what changes can be made to get closer to the goal.)
+ -A model inference algorithm (model is used to generate predictions.)
+ 
+ 
+ Introduction to the Five Machine Learning Steps
+ 
+ 1st) Define the Importances
+ - Define a very specific task
+ - Identify the machine learning task we might use to solve this problem.
+ 
+ Supervised :-
+ 
+ - using labeled data
+ - data that already contains the solutions, called labels.
+ A categorical label has a discrete set of possible values. In a machine learning problem in which you want to identify the type of flower based on a picture, you would train your model using images that have been labeled with the categories of flower you would want to identify. Furthermore, when you work with categorical labels, you often carry out classification tasks*, which are part of the supervised learning family.
+A continuous (regression) label does not have a discrete set of possible values, which often means you are working with numerical data. In the snow cone sales example, we are trying to predict the number* of snow cones sold. Here, our label is a number that could, in theory, be any value.
+ 
+ 
+ 
+ Unsupervised:-
+ - don't need to provide the model with any kind of label or solution while the model is being trained.
+ - called clustering. Clustering helps to determine if there are any naturally occurring groupings in the data.
+ - In unsupervised learning, clustering is just one example. There are many other options, such as deep learning.
+ 
+ 
+ 2nd) Build a dataset
+ - Understanding the data needed helps you select better models and algorithms so you can build more effective solutions.
+ - consists of data collection, data inspection, summary statistics and data visualization.
+ 
+ a) Data Collection
+ -  as straightforward as running the appropriate SQL queries or as complicated as building custom web scraper applications to collect data for your project
+ 
+ b) Data inspection
+ -  inspect your data, look for:
+
+Outliers
+Missing or incomplete values
+Data that needs to be transformed or preprocessed so it's in the correct format to be used by your model
+
+c) Summary statistics
+- calculate things like the mean, inner-quartile range (IQR), and standard deviation. These tools can give you insight into the scope, scale, and shape of the dataset.
+
+
+3) Model Training
+
+a) splitting dataset
+- This allows you to keep some data hidden during training, so that data can be used to evaluate your model before you put it into production. 
+- to test against the bias-variance trade-off
+
+
+Training dataset: The data on which the model will be trained. Most of your data will be here. Many developers estimate about 80%.
+Test dataset: The data withheld from the model during training, which is used to test how well your model will generalize to new data.
+
+Model Training Terminology
+
+Model parameters: Model parameters are settings or configurations the training algorithm can update to change how the model behaves. Depending on the context, you’ll also hear other more specific terms used to describe model parameters such as weights and biases. Weights, which are values that change as the model learns, are more specific to neural networks.
+Loss function: A loss function is used to codify the model’s distance from this goal. For example, if you were trying to predict a number of snow cone sales based on the day’s weather, you would care about making predictions that are as accurate as possible. So you might define a loss function to be “the average distance between your model’s predicted number of snow cone sales and the correct number.” You can see in the snow cone example this is the difference between the two purple dots.
+
+
+Putting it All Together
+The end-to-end training process is
+
+Feed the training data into the model.
+Compute the loss function on the results.
+Update the model parameters in a direction that reduces loss.
+
+- You continue to cycle through these steps until you reach a predefined stop condition. This might be based on a training time, the number of training cycles, or an even more intelligent or application-aware mechanism.
+
+
+
+
+
+
+
+
+
+
+
